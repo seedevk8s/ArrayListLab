@@ -44,11 +44,23 @@ public class MyArrayList<T> implements IList<T> {
 
     @Override
     public boolean delete(T t) {
+        for (int i=0; i < this.size; i++) {
+            if (this.elements[i].equals(t)) {
+                for (int j = i; j < this.size -1; j++) {
+                    this.elements[j] = this.elements[j+1];
+                }
+                this.size--;
+                return true;
+            }
+        }
+
         return false;
     }
 
     @Override
     public boolean deleteByIndex(int index) {
+
+
         return false;
     }
 
