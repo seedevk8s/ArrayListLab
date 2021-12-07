@@ -15,5 +15,12 @@ public class MyArrayListTest {
         System.out.println(myArrayList.get(2));
         System.out.println(myArrayList.get(3));
 
+        myArrayList.clear();
+
+        myArrayList.add(100);
+        System.out.println(myArrayList.get(0));
+
+
+
     }
 }

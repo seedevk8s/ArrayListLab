@@ -39,7 +39,7 @@ public class MyArrayList<T> implements IList<T> {
 
     @Override
     public void clear() {
-
+        this.size = 0;
     }
 
     @Override
