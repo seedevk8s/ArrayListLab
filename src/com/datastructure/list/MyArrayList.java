@@ -80,7 +80,13 @@ public class MyArrayList<T> implements IList<T> {
 
     @Override
     public int indexOf(T t) {
-        return 0;
+        for (int i = 0; i < this.size; i++) {
+            if (this.elements[i].equals(t)) {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     @Override

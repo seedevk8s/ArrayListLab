@@ -20,7 +20,7 @@ public class MyArrayListTest {
 
         //myArrayList.clear();
         //myArrayList.add(100);
-        System.out.println(myArrayList.get(0));
+        System.out.println(myArrayList.indexOf(2));
 
 
 
