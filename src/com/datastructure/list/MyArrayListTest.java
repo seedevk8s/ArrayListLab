@@ -15,14 +15,17 @@ public class MyArrayListTest {
         System.out.println(myArrayList.get(2));
         System.out.println(myArrayList.get(3));
 
-        myArrayList.delete(1);
-        myArrayList.deleteByIndex(1);
+        //myArrayList.delete(1);
+        //myArrayList.deleteByIndex(1);
 
         //myArrayList.clear();
         //myArrayList.add(100);
         System.out.println(myArrayList.indexOf(2));
 
+        System.out.println(myArrayList.isEmpty());
 
+        System.out.println(myArrayList.contains(2));
 
+        System.out.println(myArrayList.size());
     }
 }

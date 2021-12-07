@@ -91,16 +91,21 @@ public class MyArrayList<T> implements IList<T> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return this.size == 0;
     }
 
     @Override
     public boolean contains(T t) {
+        for (T elem : this.elements) {
+            if (elem.equals(t)) {
+                return true;
+            }
+        }
         return false;
     }
 
     @Override
     public int size() {
-        return 0;
+        return this.size;
     }
 }
