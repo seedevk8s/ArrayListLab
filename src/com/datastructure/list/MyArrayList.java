@@ -59,9 +59,15 @@ public class MyArrayList<T> implements IList<T> {
 
     @Override
     public boolean deleteByIndex(int index) {
+        if (index < 0 || index > this.size - 1) {
+            return false;
+        }
+        for (int i = index; i < this.size-1; i++) {
+            this.elements[i] = this.elements[i-1];
+        }
+        this.size--;
 
-
-        return false;
+        return true;
     }
 
     @Override

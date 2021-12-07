@@ -16,6 +16,7 @@ public class MyArrayListTest {
         System.out.println(myArrayList.get(3));
 
         myArrayList.delete(1);
+        myArrayList.deleteByIndex(1);
 
         //myArrayList.clear();
         //myArrayList.add(100);
